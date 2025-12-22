@@ -1,0 +1,4 @@
+https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small-q8_0.bin
+https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/libritts_r/medium/en_US-libritts_r-medium.onnx
+https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/libritts_r/medium/en_US-libritts_r-medium.onnx.json
+https://huggingface.co/Novaciano/Llama-3.2_1b_Uncensored_RP_Aesir_GGUF/resolve/main/Llama-3.2_1b_Uncensored_RP_Aesir.gguf

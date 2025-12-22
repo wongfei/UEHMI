@@ -1,0 +1,43 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1",
+	"FriendlyName": "HMI",
+	"Description": "From the moment I understood the weakness of my flesh, it disgusted me.",
+	"Category": "Other",
+	"CreatedBy": "wongfei",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "HMI",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"PlatformAllowList": [ "Win64" ]
+		},
+		{
+			"Name": "HMIBackend",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"PlatformAllowList": [ "Win64" ]
+		},
+		{
+			"Name": "HMIUncooked",
+			"Type": "UncookedOnly",
+			"LoadingPhase": "PreDefault",
+			"PlatformAllowList": [ "Win64" ]
+		},
+		{
+			"Name": "HMIEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PreDefault",
+			"PlatformAllowList": [ "Win64" ]
+		}
+	]
+}

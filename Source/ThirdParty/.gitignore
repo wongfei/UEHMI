@@ -1,0 +1,6 @@
+*.cmake
+*.pc
+*.py
+*.pdb
+*.cmd
+*.exe
