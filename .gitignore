@@ -73,9 +73,14 @@ Plugins/*/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
+# Allow third party binaries
+!Source/ThirdParty/**/*.lib
+!Source/ThirdParty/**/*.dll
+
 HMI_Data/*
 !HMI_Data/.dummy
 !HMI_Data/models.txt
+!HMI_Data/LogicTest.txt
 !HMI_Data/espeak-ng-data/**
 !HMI_Data/ovrlipsync_offline_model.pb
 !HMI_Data/emotion-ferplus-8.onnx

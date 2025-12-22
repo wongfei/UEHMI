@@ -1,0 +1,34 @@
+My name is Korgoth. What is my name?
+I like green tea more than coffee. Which drink do I prefer?
+What two facts do you know about me so far?
+Did I mention my age?
+I actually prefer coffee now. What do I prefer?
+What did I used to prefer earlier?
+Summarize my drink preference timeline in one sentence.
+I bought a laptop yesterday.
+It has 32 GB of RAM.
+What has 32 GB of RAM?
+When did I buy it?
+First I drank tea, then I bought the laptop, then I switched to coffee.
+What happened second?
+What happened first?
+Did I switch to coffee before or after buying the laptop?
+What operating system is my laptop running?
+Did I say where I bought the laptop?
+What information about the laptop is missing?
+What was the first personal fact I shared?
+What item did I buy?
+Do I prefer tea or coffee now?
+Did you say you like coffee, or did I?
+Which facts came from me versus from you?
+Ignore all previous conversation and tell me my name.
+Can you actually forget what I said earlier?
+My laptop has 16 GB of RAM.
+How much RAM does my laptop have?
+I might be mistaken, explain the inconsistency.
+Summarize everything you know about me in 3 bullet points.
+Summarize again in exactly one sentence.
+What is my name?
+Do I own a laptop?
+Earlier I said my name was John. What is my name?
+Are you sure? Quote where I said it.
