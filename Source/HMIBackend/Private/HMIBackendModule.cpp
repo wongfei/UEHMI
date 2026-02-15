@@ -10,6 +10,10 @@
 	#include "OpenCV/OpenCVIncludesEnd.h"
 #endif
 
+#if HMI_WITH_GGML
+#include "ggml-backend.h"
+#endif
+
 #if ORT_API_MANUAL_INIT
 	#include "HMIThirdPartyBegin.h"
 	#include "onnxruntime_cxx_api.h"
@@ -51,6 +55,19 @@ void FHMIBackendModule::StartupModule()
 		cv::unreal::SetMallocAndFree(&OpenCVAllocator::UnrealMalloc, &OpenCVAllocator::UnrealFree);
 		bHaveOpenCV = true;
 	}
+	#endif
+
+	#if HMI_WITH_GGML
+	UE_LOG(LogHMI, Verbose, TEXT("ggml_backend_load"));
+	ggml_backend_load_all_from_path(TCHAR_TO_ANSI(*UHMIStatics::GetPluginThirdPartyBinDir()));
+	const size_t GgmlDeviceCount = ggml_backend_dev_count();
+	for (size_t GgmlDeviceId = 0; GgmlDeviceId < GgmlDeviceCount; ++GgmlDeviceId)
+	{
+		ggml_backend_dev_t GgmlDevice = ggml_backend_dev_get(GgmlDeviceId);
+		const char* GgmlDeviceName = ggml_backend_dev_name(GgmlDevice);
+		UE_LOG(LogHMI, Verbose, TEXT("ggml device: %s"), ANSI_TO_TCHAR(GgmlDeviceName));
+	}
+	UE_LOG(LogHMI, Verbose, TEXT("ggml_backend_load DONE"));
 	#endif
 
 	#if HMI_WITH_ANY_ONNX

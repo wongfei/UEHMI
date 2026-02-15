@@ -172,11 +172,21 @@ public class HMIBackend : ModuleRules
             if (WithGgml)
             {
                 string Prefix = Path.Combine(ThirdPartyDir, "ggml");
-                AddDll(ThirdPartyBinDir, Path.Combine(Prefix, "bin"), "ggml.dll");
-                AddDll(ThirdPartyBinDir, Path.Combine(Prefix, "bin"), "ggml-base.dll");
-                AddDll(ThirdPartyBinDir, Path.Combine(Prefix, "bin"), "ggml-cpu.dll");
-                AddDll(ThirdPartyBinDir, Path.Combine(Prefix, "bin"), "ggml-cuda.dll");
+                PublicAdditionalLibraries.Add(Path.Combine(Prefix, "lib", "ggml.lib"));
+                PublicAdditionalLibraries.Add(Path.Combine(Prefix, "lib", "ggml-base.lib"));
+
+                AddDll(ThirdPartyBinDir, Path.Combine(Prefix, "bin"), "ggml.dll", true);
+                AddDll(ThirdPartyBinDir, Path.Combine(Prefix, "bin"), "ggml-base.dll", true);
+
+                // backends (dynload)
                 AddDll(ThirdPartyBinDir, Path.Combine(Prefix, "bin"), "ggml-vulkan.dll");
+                //AddDll(ThirdPartyBinDir, Path.Combine(Prefix, "bin"), "ggml-cuda.dll");
+
+                var files = Directory.EnumerateFiles(Path.Combine(Prefix, "bin"), "ggml-cpu-*.dll", SearchOption.TopDirectoryOnly);
+                foreach (var file in files)
+                {
+                    AddDll(ThirdPartyBinDir, Path.Combine(Prefix, "bin"), Path.GetFileName(file));
+                }
             }
 
             if (WithWhisper)
