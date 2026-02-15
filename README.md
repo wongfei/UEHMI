@@ -9,6 +9,10 @@ UEHMI is a fully integrated Unreal Engine plugin designed to simplify human × m
 
 [![Demo](_img/thumb.png)](https://youtu.be/aBnHtudsks8)
 
+[Demo win64](https://drive.google.com/drive/folders/1bhdCbWFnIFyZNA6jrCKqg-yjAw3yPVJK?usp=sharing)
+
+[Demo uproject](https://drive.google.com/drive/folders/1CTkIVud-jup6Zrbnni6vO77GNWPXjvHN?usp=sharing)
+
 
 <details>
 <summary>Table of Contents</summary>
@@ -17,7 +21,6 @@ UEHMI is a fully integrated Unreal Engine plugin designed to simplify human × m
 	<li><a href="#dependencies">Dependencies</a></li>
 	<li><a href="#features">Features</a></li>
 	<li><a href="#setup">Setup</a></li>
-	<li><a href="#examples">Examples</a></li>
 	<li><a href="#api-overview">API Overview</a></li>
 </ol>
 </details>
@@ -42,6 +45,9 @@ UEHMI is a fully integrated Unreal Engine plugin designed to simplify human × m
 - OpenCV
 
 *(all dependencies are optional)*
+
+[Custom build scripts](https://github.com/wongfei/UEHMI_Deps)
+
 
 ## Features
 
@@ -100,13 +106,6 @@ UEHMI is a fully integrated Unreal Engine plugin designed to simplify human × m
 	[/Script/Engine.GameSession]
 	bRequiresPushToTalk=False
 	```
-
-
-## Examples
-
-[Demo project - UE 5.4](https://drive.google.com/drive/folders/1CTkIVud-jup6Zrbnni6vO77GNWPXjvHN?usp=sharing)
-
-[Packaged demo project - Win64](https://drive.google.com/drive/folders/1bhdCbWFnIFyZNA6jrCKqg-yjAw3yPVJK?usp=sharing)
 
 
 ## API Overview
